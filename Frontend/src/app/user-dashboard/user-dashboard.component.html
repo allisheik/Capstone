@@ -1,0 +1,33 @@
+<div class="fluid-container text-center p-5 ">
+       <br><br><br>
+    <div class="row">
+      <div class="col">
+        <img src="https://gumlet.assettype.com/Prabhatkhabar%2F2020-10%2F5cebd0eb-885b-485e-ad97-f133d194fe5f%2Fhow_to_download_aadhaar_card_online.jpg?format=webp&w=400&dpr=2.6" class="img-fluid" alt="...">
+      </div>
+      <div class="col">
+        <br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="form" class="btn btn-primary  btn-lg rounded">&nbsp;&nbsp;&nbsp; New Aadhar &nbsp;&nbsp;&nbsp;</a>
+        </div>
+        <br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="form" class="btn btn-info  btn-lg rounded">&nbsp; Update Aadhar &nbsp;</a>
+        </div>
+        <br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-success  btn-lg rounded" (click)="show()" >Duplicate Aadhar</button>
+            <div *ngIf="flag" style="background-color: rgb(250, 89, 8);">
+              Your Duplicate Aadhar Request has been processed, it will be delivered to your address within a week
+          </div>
+        </div>
+        <br><br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-danger  btn-lg rounded" (click)="display()">&nbsp;&nbsp;Cancel Aadhar&nbsp;&nbsp;</button>
+            <div *ngIf="alert" style="background-color: rgb(250, 24, 8);">
+               Your Request is sent to admin for approval 
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
